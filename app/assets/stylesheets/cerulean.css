@@ -19,6 +19,7 @@ html {
 body {
   margin: 0;
 }
+
 article,
 aside,
 details,
@@ -6902,3 +6903,10 @@ button.close {
 .panel-info .panel-title {
   color: #fff;
 }
+
+.carousel{
+
+margin-bottom: 20px;
+}
+
+

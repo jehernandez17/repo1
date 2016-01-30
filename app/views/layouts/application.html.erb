@@ -20,27 +20,17 @@
 </head>
 <body>
 
+
 <div class="page-header" style="height:10%">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="wwww.xconsumir.com">
-      <!--   <%= image_tag "Logoxconsumir.png", :alt => "Xconsumir.com", :title => "Xconsumir.com"%> -->
+      
          <%= image_tag "Logoxconsumir.png",size: "350x70", :alt => "Xconsumir.com", :title => "Xconsumir.com"%>
       </a>
     </div>
   </div>
 </div>
-
-
-<!-- Para Imagen y logo -->
-<!-- <nav class="navbar navbar-default"> -->
-<!-- <nav class="navbar navbar-dafault" style="background-color: #ffffff">
-  
-</nav> -->
-
-<!-- Fin ara Imagen y logo -->
-
-
 
 <!-- <nav class="navbar navbar-dafault" style="background-color: #00B1E7, color: #ecf0f1; "> -->
   <nav class="navbar navbar-default">
@@ -67,13 +57,15 @@
         <li><a href="#">Como Gano</a></li>
         <li><a href="#">Cuanto me gano</a></li>
         <li><a href="#">Facturas</a></li>
-        <button type="button" class="btn btn-default navbar-btn"> <h6>Login :<span class="label label-danger">Oficina Virtual</span></h6></button>
-
+       <ul class="pull-right">
+           <button type="button" class="btn btn-default navbar-btn" class="pull-right"> <h6>Login :<span class="label label-danger">Oficina Virtual</span></h6></button> 
+        </ul>
 
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
 <%= yield %>
 
 </body>

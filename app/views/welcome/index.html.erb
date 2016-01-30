@@ -1,7 +1,130 @@
-<div class="container">
-<div class="jumbotron">
-  <h1>Recupera Dinero en Tus Compras!</h1>
-  <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+<div class="container">   <!-- Iniciando contenedor 1 -->
+
+
+<div class="container"> <!-- Iniciando contenedor de carrusel -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag "slide1.png"%>
+      <div class="carousel-caption">
+          <h3>Texto 1 para Xconsumir.com</h3>
+      </div>
+    </div>
+    <div class="item">
+       <%= image_tag "slide2.png"%>
+      <div class="carousel-caption">
+          <h3>Texto 2 para Xconsumir.com</h3>
+      </div>
+    </div>
+    <div class="item">
+       <%= image_tag "slide3.png"%>
+      <div class="carousel-caption">
+          <h3>Texto 3 para Xconsumir.com</h3>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "slide4.png"%>
+      <div class="carousel-caption">
+          <h3>Texto 4 para Xconsumir.com</h3>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> <!-- Carousel -->
+</div> <!-- Finalizando contenedor de carrusel -->
+</div> <!-- fin contenedor 1 -->
+
+ <!-- iniciando 3 cajas de text thumbnail -->
+ <div class="container-fluid">
+   <div class="row">
+   <div class="col-md-4">
+      <div class="thumbnail">
+       <%= image_tag "thumb1.svg",size: "300x80"%>
+          <div class="caption">
+            <h3>Que es Xconsumir</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. </p>
+            <p><a href="#" class="btn btn-primary" role="button">Quiero saber más</a></p>
+
+          </div>
+      </div>
+  </div>
+
+  <div class="col-md-4">
+      <div class="thumbnail">
+        <%= image_tag "thumb1.svg",size: "300x80"%>
+          <div class="caption">
+            <h3>Como Funciona</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Quiero saber más</a></p>
+          </div>
+      </div>
+  </div>
+  
+  <div class="col-md-4">
+      <div class="thumbnail">
+       <%= image_tag "thumb1.svg",size: "300x80"%>
+          <div class="caption">
+            <h3>Cuánto me gano?</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Quiero saber más</a></p>
+          </div>
+      </div>
+       
+  </div>  <!--  fin 3 cajas de text thumbnail -->
+ </div>  <!--  fin contenedor general 3 cajas de text thumbnail -->
+<div class="container-fluid">
+<div class="row">
+   <div class="col-md-7">
+        <div class="jumbotron">
+            <h1>Hello, world!</h1>
+            <p>...</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+   </div>
+ 
+    <div class="col-md-5">
+
+           <div class="row">
+                     <video controls class="img-responsive">
+                           <!--  <source src="video/intro.mp4" type="video/mp4"></source> -->
+                            <source src="http://xconsumir.com/wp-content/uploads/2015/01/Que-es-Xconsumir.mp4" type="video/mp4"></source>
+
+                        </video>
+             </div>
+         
+         </div>
+
+
+     </div>
+
 </div>
-</div>
+       
+
+
+
+
+
+
+
+<script>
+    $('.carousel').carousel({
+        interval: 2000
+    })
+</script>
+

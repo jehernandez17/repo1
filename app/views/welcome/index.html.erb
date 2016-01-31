@@ -50,44 +50,155 @@
 </div> <!-- Finalizando contenedor de carrusel -->
 </div> <!-- fin contenedor 1 -->
 
+
+<!-- Iniciando Cajas de Texto con iconos -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="box">
+                <div class="icon">
+                    <div class="image"><span class="glyphicon glyphicon-list-alt btn-lg white"></span></div>
+                    <div class="info">
+                        <h3 class="title">Qué es Xconsumir?</h3>
+                        <p>
+                            Conoce Todo Sobre Nuestra Empresa, Misión, Visión, Valores.
+                        </p>
+                        <div class="more">
+                            <a href="#" title="Title Link"><i class="fa fa-plus"></i>Leer Más…</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="box">
+                <div class="icon">
+                    <div class="image"><span class="glyphicon glyphicon-envelope btn-lg white"></span></div>
+                    <div class="info">
+                        <h3 class="title">Cómo Funciona?</h3>
+                        <p>
+                            Enterarte De La Forma Como Recuperas Dinero Con Tus Compras.
+                        </p>
+                        <div class="more">
+                            <a href="#" title="Title Link"><i class="fa fa-plus"></i>Leer Más…</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="box">
+                <div class="icon">
+                    <div class="image"><span class="glyphicon glyphicon-volume-up btn-lg white"></span></div>
+                    <div class="info">
+                        <h3 class="title">Cuánto Me Gano?</h3>
+                        <p>
+                            Haga Usted Mismo Sus Cuentas, Por Compras Propias Y Referidos.
+                        </p>
+                        <div class="more">
+                            <a href="#" title="Title Link"><i class="fa fa-plus"></i>Leer Más…</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.white {
+    color: white;
+}
+
+.btn-lg {
+    font-size: 38px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+
+.box > .icon {
+    text-align: center;
+    position: relative;
+}
+
+.box > .icon > .image {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 88px;
+    height: 88px;
+    border: 7px solid white;
+    line-height: 88px;
+    border-radius: 50%;
+    /*background: #63B76C; verde fondo de circulos*/
+    background: #00B1E7;
+    vertical-align: middle;
+}
+
+.box > .icon:hover > .image {
+    border: 4px solid #EA0505;
+}
+
+.box > .icon > .image > i {
+    font-size: 40px !important;
+    color: #fff !important;
+}
+
+.box > .icon:hover > .image > i {
+    color: white !important;
+}
+
+.box > .icon > .info {
+    margin-top: -24px;
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid #e0e0e0;
+    padding: 15px 0 10px 0;
+}
+
+    .box > .icon > .info > h3.title {
+        color: red;     /*color del texto*/
+        font-weight: 500;
+    }
+
+    .box > .icon > .info > p {
+        color: #666;
+        line-height: 1.5em;
+        margin: 20px;
+    }
+
+.box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a {
+    color: #222;
+}
+
+.box > .icon > .info > .more a {
+    color: #222;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.box > .icon:hover > .info > .more > a {
+    color: #000;
+    padding: 6px 8px;
+    border-bottom: 4px solid #EA0505;
+}
+
+.box .space {
+    height: 30px;
+}
+</style>
+<!-- Fin Cajas de Texto con iconos -->
+
+
+
+
  <!-- iniciando 3 cajas de text thumbnail -->
- <div class="container-fluid">
-   <div class="row">
-   <div class="col-md-4">
-      <div class="thumbnail">
-       <%= image_tag "thumb1.svg",size: "300x80"%>
-          <div class="caption">
-            <h3>Que es Xconsumir</h3>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. </p>
-            <p><a href="#" class="btn btn-primary" role="button">Quiero saber más</a></p>
-
-          </div>
-      </div>
-  </div>
-
-  <div class="col-md-4">
-      <div class="thumbnail">
-        <%= image_tag "thumb1.svg",size: "300x80"%>
-          <div class="caption">
-            <h3>Como Funciona</h3>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Quiero saber más</a></p>
-          </div>
-      </div>
-  </div>
-  
-  <div class="col-md-4">
-      <div class="thumbnail">
-       <%= image_tag "thumb1.svg",size: "300x80"%>
-          <div class="caption">
-            <h3>Cuánto me gano?</h3>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Quiero saber más</a></p>
-          </div>
-      </div>
-       
-  </div>  <!--  fin 3 cajas de text thumbnail -->
- </div>  <!--  fin contenedor general 3 cajas de text thumbnail -->
+ 
+ 
 <div class="container-fluid">
 <div class="row">
    <div class="col-md-7">
@@ -115,16 +226,15 @@
 
 </div>
        
-
-
-
-
-
-
-
 <script>
     $('.carousel').carousel({
         interval: 2000
     })
 </script>
+
+
+
+
+
+
 
